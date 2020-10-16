@@ -37,18 +37,39 @@ def divisor(number)
   result = []
   i = 1
   while i <= number 
-    if number % i == 0
-      result << i
-    end 
+    result << i if number % i == 0
     i += 1
   end
+  
  puts result.sum
 end
 
 divisor(4)
 # -------------------------------------------------
-# 1/1...1/nの合計で9を超える
+# 逆数和 -> 1/1...1/nの合計で9を超える
 def array(n)
     (1..n).map{|n| Rational(1,n)}.sum.to_f
 end
 puts array(4550)
+# --------------------------------------------
+# 任意の数(今回は30)までFizzBuzz(アメリカの暇つぶし言葉遊び)
+def fizzBuzz(num)
+  (1..num).each do |n|
+    if n % 3 == 0 && n % 5 == 0
+      puts "FizzBuzz"
+    elsif n % 3 == 0
+      puts "Fizz"
+    elsif n % 5 == 0
+      puts "Buzz"
+    else
+      puts n
+    end  
+  end
+end
+
+fizzBuzz(30)
+# https://ja.wikipedia.org/wiki/Fizz_Buzz
+
+# --------------------------------------------
+# フィボナッチ数列(任意の項までの和)
+
