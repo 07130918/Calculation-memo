@@ -1,11 +1,10 @@
 # 簡易的な真面目なプログラムからふざけたものまで自分の気になったことをメモのような形でまとめているリポジトリです　　
 It is a repository that summarizes what you are interested in, from simple serious programs to playful ones, in the form of memos.　　
 
-* Ruby 2.5.1 フレームワーク Rails 5.2.4.4  
+* Ruby
 
 * Javascript  
 
-* 開発環境 AWS EC2
 
 例えば...  
 世界のナベアツがいつかとんでもない数字まで芸をやらなくちゃいけなくなったときに調べてあげます  
