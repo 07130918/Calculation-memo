@@ -30,7 +30,7 @@ end
 
 # 今年
 count_days_with_months(input_year_months - 1)
-$days += 1 if (years % 400 == 0 || years % 4 == 0 &&  years % 100 != 0) && input_year_months > 3
+$days += 1 if (years % 400 == 0 || years % 4 == 0 &&  years % 100 != 0) && input_year_months >= 3
 $days += input_year_days - 1
 
 DAYS_OF_WEEK = %w[水曜日 木曜日 金曜日 土曜日 日曜日 月曜日 火曜日]
